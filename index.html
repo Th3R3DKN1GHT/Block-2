@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sunrise Bar</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="template.css">
+<link rel="stylesheet" href="template2.css">
+<link rel="icon" type="logo/png" href="./logo.png">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("b1.jpg");
+  min-height: 75%;
+  
+}
+
+.menu {
+  display: none;
+}
+.title {
+  color: white;
+  background-color: black;
+}
+.logo1{
+  height: 600px;
+}
+.email{
+  height: 25px;
+}
+.insta{
+  height: 25px;
+}
+
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#home" class="home">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="abt">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#flavors" class="flavors">OUR PRODUCT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#order" class="order">ORDER</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#contact" class="contact">CONTACT US</a>
+    </div>
+  
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag"></span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <img class="logo1" src="logo.png" alt="logo">
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white"></span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT US</span></h5>
+    <p>The purpose of the Sunrise Bar is to fulfill the nutritional needs of a human in a day with just 2 bars. Sunrise bar was created by Silvana Felix, Sofia Mouriño, Victoria Gutierrez, Andres Sotomayor and Regina Adame with the purpose of helping with the second Sustainable Development Goal of the United Nations, Zero Hunger.</p>
+    
+    <p><strong>Our mision</strong> is to not only reduce world hunger, but to also give families suffering from it a sense of security and protection.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>“Hunger is not a problem. It is an obscenity. How wonderful it is that nobody need wait a single moment before starting to improve the world.”</i></p>
+      <p>—Anne Frank</p>
+    </div>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="flavors">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">FLAVORS</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Sweet');" id="myLink">
+        <div class="w3-col s6 tablink">Sweet</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Salty');">
+        <div class="w3-col s6 tablink">Salty</div>
+      </a>
+    </div>
+
+    <div id="Sweet" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Puffed rice</h5><br>
+      
+    
+      <h5>Peanut</h5><br>
+      
+    
+      <h5>Pecan nut</h5><br>
+      
+    
+      <h5>Almond</h5><br>
+      
+    
+      <h5>Chickpea</h5><br>
+      
+
+      <h5>Dark Chocolate</h5><br>
+      
+
+      <h5>Chocolate chips</h5><br>
+      
+
+      <h5>Honey</h5><br>
+      
+
+      <h5>Sesame seeds</h5><br>
+      
+
+      <h5>Water</h5>
+      
+
+    </div>
+
+    <div id="Salty" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Puffed rice</h5><br>
+      
+    
+      <h5>Chickpea</h5><br>
+      
+
+      <h5>Sesame seeds</h5><br>
+    
+    
+      <h5>Sunflower seeds</h5><br>
+
+      <h5>Quinoa</h5><br>
+      
+
+      <h5>Pepper</h5><br>
+      
+
+      <h5>Salt</h5><br>
+      
+
+      <h5>Garlic powder</h5><br>
+      
+      
+      <h5>Grenadine</h5><br>
+      
+    
+      <h5>Water</h5>
+      
+
+    </div>  
+    
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="order" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3486.5728574603327!2d-111.00462848451411!3d29.088764570035266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ce83c47d54995b%3A0xf25d7bd30e79ef3!2sHighPoint%20International%20School%20Hermosillo!5e0!3m2!1sen!2smx!4v1675878580181!5m2!1sen!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <p>Find us here! ^</p>
+    <p><span class="w3-tag">FYI!</span> Any comment, request or specification when ordering can be sent at 'Message \ Special requirements' down below.</p>
+    <p>Place an order <strong>today!</strong></p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many sweet bars?" required name="swBars"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many salty bars?" required name="saBars"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  
+  <a href="https://instagram.com/the.sunrise_bar?igshid=YmMyMTA2M2Y=" >
+    <img class="insta" src="./insta.PNG" alt="instagram"><p>@the.sunrise_bar</p>
+  </a>
+  <img class="email" src="./@.PNG" alt="for email">
+  <p>the.sunrise.bar@gmail.com</p>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
